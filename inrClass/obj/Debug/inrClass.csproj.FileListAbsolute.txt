@@ -1,0 +1,5 @@
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\inrClass\bin\Debug\inrClass.dll
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\inrClass\bin\Debug\inrClass.pdb
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\inrClass\obj\Debug\inrClass.csprojResolveAssemblyReference.cache
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\inrClass\obj\Debug\inrClass.dll
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\inrClass\obj\Debug\inrClass.pdb

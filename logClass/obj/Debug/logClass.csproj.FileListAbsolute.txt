@@ -1,0 +1,5 @@
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\logClass\bin\Debug\logClass.dll
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\logClass\bin\Debug\logClass.pdb
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\logClass\obj\Debug\logClass.csprojResolveAssemblyReference.cache
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\logClass\obj\Debug\logClass.dll
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\logClass\obj\Debug\logClass.pdb

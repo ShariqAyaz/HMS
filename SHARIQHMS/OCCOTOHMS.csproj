@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB8092EA-F9BD-4F65-A55F-6B98766D941D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SHARIQHMS</RootNamespace>
+    <AssemblyName>SHARIQHMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>StareheBlue.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ds\dsCheckedGuestlist.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCheckedGuestlist.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMC.Designer.cs">
+      <DependentUpon>frmMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRep\frmGuestDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRep\frmGuestDetails.Designer.cs">
+      <DependentUpon>frmGuestDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Attributes\frmAttributeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\Attributes\frmAttributeEntry.Designer.cs">
+      <DependentUpon>frmAttributeEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Attributes\frmAttributeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\Attributes\frmAttributeProfile.Designer.cs">
+      <DependentUpon>frmAttributeProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Conditions\frmConditionEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\Conditions\frmConditionEntry.Designer.cs">
+      <DependentUpon>frmConditionEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Customers\frmNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\Customers\frmNewCustomer.Designer.cs">
+      <DependentUpon>frmNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Rooms\frmRestaurantTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\Rooms\frmRestaurantTable.Designer.cs">
+      <DependentUpon>frmRestaurantTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Rooms\frmRoomEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\Rooms\frmRoomEntry.Designer.cs">
+      <DependentUpon>frmRoomEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservations\frmCheckinDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations\frmCheckinDialog.Designer.cs">
+      <DependentUpon>frmCheckinDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservations\frmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations\frmReservation.Designer.cs">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservations\frmRoomPickup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations\frmRoomPickup.Designer.cs">
+      <DependentUpon>frmRoomPickup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservations\frmRoomStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservations\frmRoomStatus.Designer.cs">
+      <DependentUpon>frmRoomStatus.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMC.resx">
+      <DependentUpon>frmMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRep\frmGuestDetails.resx">
+      <DependentUpon>frmGuestDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\Attributes\frmAttributeEntry.resx">
+      <DependentUpon>frmAttributeEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\Attributes\frmAttributeProfile.resx">
+      <DependentUpon>frmAttributeProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\Conditions\frmConditionEntry.resx">
+      <DependentUpon>frmConditionEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\Customers\frmNewCustomer.resx">
+      <DependentUpon>frmNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\Rooms\frmRestaurantTable.resx">
+      <DependentUpon>frmRestaurantTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\Rooms\frmRoomEntry.resx">
+      <DependentUpon>frmRoomEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reservations\frmCheckinDialog.resx">
+      <DependentUpon>frmCheckinDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservations\frmReservation.resx">
+      <DependentUpon>frmReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservations\frmRoomPickup.resx">
+      <DependentUpon>frmRoomPickup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservations\frmRoomStatus.resx">
+      <DependentUpon>frmRoomStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rp\internal\repCheckedGuestlist.rdlc" />
+    <EmbeddedResource Include="rp\internal\repGuestDetailsList.rdlc" />
+    <None Include="app.config" />
+    <None Include="ds\dsCheckedGuestlist.xsc">
+      <DependentUpon>dsCheckedGuestlist.xsd</DependentUpon>
+    </None>
+    <None Include="ds\dsCheckedGuestlist.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCheckedGuestlist.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ds\dsCheckedGuestlist.xss">
+      <DependentUpon>dsCheckedGuestlist.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cbmprocessor\cbmprocessor.csproj">
+      <Project>{6aa01e9a-c2dc-4dee-9d91-9a7ea5da02ae}</Project>
+      <Name>cbmprocessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\counterClass\counterClass.csproj">
+      <Project>{25912bd1-442b-47e0-85f2-ec59e1d5dfcd}</Project>
+      <Name>counterClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\inrClass\inrClass.csproj">
+      <Project>{5f2b3d9f-8de2-4213-8929-749d794403df}</Project>
+      <Name>inrClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\logClass\logClass.csproj">
+      <Project>{9650ea32-356c-4eda-b8c3-a6eaeda4cee9}</Project>
+      <Name>logClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nDate\nDate.csproj">
+      <Project>{a02a2ca0-c981-44dd-baeb-b4c4bb16378a}</Project>
+      <Name>nDate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ologo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Masters\addons\" />
+    <Folder Include="rp\cust\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\breakfast.png" />
+    <None Include="assets\ic_action_save.png" />
+    <None Include="assets\ic_action_new.png" />
+    <None Include="assets\edit.png" />
+    <Content Include="Resources\acquisition.png" />
+    <Content Include="StareheBlue.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

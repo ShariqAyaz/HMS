@@ -1,0 +1,5 @@
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\cbmprocessor\bin\Debug\cbmprocessor.dll
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\cbmprocessor\bin\Debug\cbmprocessor.pdb
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\cbmprocessor\obj\Debug\cbmprocessor.csprojResolveAssemblyReference.cache
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\cbmprocessor\obj\Debug\cbmprocessor.dll
+L:\PROJECTS\RUNNING_PROJECTS\SHARIQHMS\cbmprocessor\obj\Debug\cbmprocessor.pdb

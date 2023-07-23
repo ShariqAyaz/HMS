@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCheckedGuestlist" targetNamespace="http://tempuri.org/dsCheckedGuestlist.xsd" xmlns:mstns="http://tempuri.org/dsCheckedGuestlist.xsd" xmlns="http://tempuri.org/dsCheckedGuestlist.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="shariqhmsCS" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="shariqhmsCS (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SHARIQHMS.Properties.Settings.GlobalReference.Default.shariqhmsCS" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DTcheckedGuestlistTableAdapter" GeneratorDataComponentClassName="DTcheckedGuestlistTableAdapter" Name="DTcheckedGuestlist" UserDataComponentName="DTcheckedGuestlistTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="shariqhmsCS (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        reservation_det.id, reservation_det.res_no, reservation_det.res_date, reservation_det.IsCheckedIn,reservation_det.IsCheckedOut, reservation_det.IsCancel, reservation_det.rcheckin_date, reservation_det.rcheckout_date, 
+                         reservation_det.room_no, reservation_det.rguestname, reservation_det.rguestidcard, reservation_det.rguestphone, reservation_det.rguestadd, reservation_det.rdayrate, reservation_det.rdays, 
+                         reservation_det.room_meals, reservation_det.isLocked, reservation_det.uid, reservation_det.m_del, reservation_det.time_stamp, room_mast.rcat
+FROM            reservation_det INNER JOIN
+                         room_mast ON reservation_det.room_no = room_mast.rno
+WHERE        (reservation_det.IsCheckedIn = 'True')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="res_no" DataSetColumn="res_no" />
+              <Mapping SourceColumn="res_date" DataSetColumn="res_date" />
+              <Mapping SourceColumn="IsCheckedIn" DataSetColumn="IsCheckedIn" />
+              <Mapping SourceColumn="IsCancel" DataSetColumn="IsCancel" />
+              <Mapping SourceColumn="rcheckin_date" DataSetColumn="rcheckin_date" />
+              <Mapping SourceColumn="rcheckout_date" DataSetColumn="rcheckout_date" />
+              <Mapping SourceColumn="room_no" DataSetColumn="room_no" />
+              <Mapping SourceColumn="rguestname" DataSetColumn="rguestname" />
+              <Mapping SourceColumn="rguestidcard" DataSetColumn="rguestidcard" />
+              <Mapping SourceColumn="rguestphone" DataSetColumn="rguestphone" />
+              <Mapping SourceColumn="rguestadd" DataSetColumn="rguestadd" />
+              <Mapping SourceColumn="rdayrate" DataSetColumn="rdayrate" />
+              <Mapping SourceColumn="rdays" DataSetColumn="rdays" />
+              <Mapping SourceColumn="room_meals" DataSetColumn="room_meals" />
+              <Mapping SourceColumn="isLocked" DataSetColumn="isLocked" />
+              <Mapping SourceColumn="uid" DataSetColumn="uid" />
+              <Mapping SourceColumn="m_del" DataSetColumn="m_del" />
+              <Mapping SourceColumn="time_stamp" DataSetColumn="time_stamp" />
+              <Mapping SourceColumn="rcat" DataSetColumn="rcat" />
+              <Mapping SourceColumn="IsCheckedOut" DataSetColumn="IsCheckedOut" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCheckedGuestlist" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsCheckedGuestlist" msprop:Generator_UserDSName="dsCheckedGuestlist">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTcheckedGuestlist" msprop:Generator_TableClassName="DTcheckedGuestlistDataTable" msprop:Generator_TableVarName="tableDTcheckedGuestlist" msprop:Generator_RowChangedName="DTcheckedGuestlistRowChanged" msprop:Generator_TablePropName="DTcheckedGuestlist" msprop:Generator_RowDeletingName="DTcheckedGuestlistRowDeleting" msprop:Generator_RowChangingName="DTcheckedGuestlistRowChanging" msprop:Generator_RowEvHandlerName="DTcheckedGuestlistRowChangeEventHandler" msprop:Generator_RowDeletedName="DTcheckedGuestlistRowDeleted" msprop:Generator_RowClassName="DTcheckedGuestlistRow" msprop:Generator_UserTableName="DTcheckedGuestlist" msprop:Generator_RowEvArgName="DTcheckedGuestlistRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="res_no" msprop:Generator_ColumnVarNameInTable="columnres_no" msprop:Generator_ColumnPropNameInRow="res_no" msprop:Generator_ColumnPropNameInTable="res_noColumn" msprop:Generator_UserColumnName="res_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="res_date" msprop:Generator_ColumnVarNameInTable="columnres_date" msprop:Generator_ColumnPropNameInRow="res_date" msprop:Generator_ColumnPropNameInTable="res_dateColumn" msprop:Generator_UserColumnName="res_date" type="xs:dateTime" />
+              <xs:element name="IsCheckedOut" msprop:Generator_ColumnVarNameInTable="columnIsCheckedOut" msprop:Generator_ColumnPropNameInRow="IsCheckedOut" msprop:Generator_ColumnPropNameInTable="IsCheckedOutColumn" msprop:Generator_UserColumnName="IsCheckedOut" type="xs:boolean" />
+              <xs:element name="IsCheckedIn" msprop:Generator_ColumnVarNameInTable="columnIsCheckedIn" msprop:Generator_ColumnPropNameInRow="IsCheckedIn" msprop:Generator_ColumnPropNameInTable="IsCheckedInColumn" msprop:Generator_UserColumnName="IsCheckedIn" type="xs:boolean" />
+              <xs:element name="IsCancel" msprop:Generator_ColumnVarNameInTable="columnIsCancel" msprop:Generator_ColumnPropNameInRow="IsCancel" msprop:Generator_ColumnPropNameInTable="IsCancelColumn" msprop:Generator_UserColumnName="IsCancel" type="xs:boolean" />
+              <xs:element name="rcheckin_date" msprop:Generator_ColumnVarNameInTable="columnrcheckin_date" msprop:Generator_ColumnPropNameInRow="rcheckin_date" msprop:Generator_ColumnPropNameInTable="rcheckin_dateColumn" msprop:Generator_UserColumnName="rcheckin_date" type="xs:dateTime" />
+              <xs:element name="rcheckout_date" msprop:Generator_ColumnVarNameInTable="columnrcheckout_date" msprop:Generator_ColumnPropNameInRow="rcheckout_date" msprop:Generator_ColumnPropNameInTable="rcheckout_dateColumn" msprop:Generator_UserColumnName="rcheckout_date" type="xs:dateTime" />
+              <xs:element name="room_no" msprop:Generator_ColumnVarNameInTable="columnroom_no" msprop:Generator_ColumnPropNameInRow="room_no" msprop:Generator_ColumnPropNameInTable="room_noColumn" msprop:Generator_UserColumnName="room_no">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rguestname" msprop:Generator_ColumnVarNameInTable="columnrguestname" msprop:Generator_ColumnPropNameInRow="rguestname" msprop:Generator_ColumnPropNameInTable="rguestnameColumn" msprop:Generator_UserColumnName="rguestname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rguestidcard" msprop:Generator_ColumnVarNameInTable="columnrguestidcard" msprop:Generator_ColumnPropNameInRow="rguestidcard" msprop:Generator_ColumnPropNameInTable="rguestidcardColumn" msprop:Generator_UserColumnName="rguestidcard">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rguestphone" msprop:Generator_ColumnVarNameInTable="columnrguestphone" msprop:Generator_ColumnPropNameInRow="rguestphone" msprop:Generator_ColumnPropNameInTable="rguestphoneColumn" msprop:Generator_UserColumnName="rguestphone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rguestadd" msprop:Generator_ColumnVarNameInTable="columnrguestadd" msprop:Generator_ColumnPropNameInRow="rguestadd" msprop:Generator_ColumnPropNameInTable="rguestaddColumn" msprop:Generator_UserColumnName="rguestadd">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rdayrate" msprop:Generator_ColumnVarNameInTable="columnrdayrate" msprop:Generator_ColumnPropNameInRow="rdayrate" msprop:Generator_ColumnPropNameInTable="rdayrateColumn" msprop:Generator_UserColumnName="rdayrate" type="xs:decimal" />
+              <xs:element name="rdays" msprop:Generator_ColumnVarNameInTable="columnrdays" msprop:Generator_ColumnPropNameInRow="rdays" msprop:Generator_ColumnPropNameInTable="rdaysColumn" msprop:Generator_UserColumnName="rdays" type="xs:int" />
+              <xs:element name="room_meals" msprop:Generator_ColumnVarNameInTable="columnroom_meals" msprop:Generator_ColumnPropNameInRow="room_meals" msprop:Generator_ColumnPropNameInTable="room_mealsColumn" msprop:Generator_UserColumnName="room_meals" type="xs:decimal" />
+              <xs:element name="isLocked" msprop:Generator_ColumnVarNameInTable="columnisLocked" msprop:Generator_ColumnPropNameInRow="isLocked" msprop:Generator_ColumnPropNameInTable="isLockedColumn" msprop:Generator_UserColumnName="isLocked" type="xs:boolean" />
+              <xs:element name="uid" msprop:Generator_ColumnVarNameInTable="columnuid" msprop:Generator_ColumnPropNameInRow="uid" msprop:Generator_ColumnPropNameInTable="uidColumn" msprop:Generator_UserColumnName="uid">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="m_del" msprop:Generator_ColumnVarNameInTable="columnm_del" msprop:Generator_ColumnPropNameInRow="m_del" msprop:Generator_ColumnPropNameInTable="m_delColumn" msprop:Generator_UserColumnName="m_del">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="time_stamp" msprop:Generator_ColumnVarNameInTable="columntime_stamp" msprop:Generator_ColumnPropNameInRow="time_stamp" msprop:Generator_ColumnPropNameInTable="time_stampColumn" msprop:Generator_UserColumnName="time_stamp" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="rcat" msprop:Generator_ColumnVarNameInTable="columnrcat" msprop:Generator_ColumnPropNameInRow="rcat" msprop:Generator_ColumnPropNameInTable="rcatColumn" msprop:Generator_UserColumnName="rcat">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="90" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
